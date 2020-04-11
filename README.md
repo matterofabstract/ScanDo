@@ -1,4 +1,4 @@
-# Scan Do Scan
+# ScanDo
 
 [![Dependencies](https://david-dm.org/matterofabstract/ScanDo.svg)](https://github.com/matterofabstract/ScanDo)
 ![Github All Releases](https://img.shields.io/github/downloads/matterofabstract/ScanDo/total.svg)
