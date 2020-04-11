@@ -1,15 +1,18 @@
+/**
+ * Electron Main Process File
+ */
+
 require('./core/');
 
 const path = require('path');
+const Store = require('electron-store');
 const { app, BrowserWindow } = require('electron');
 
 const { isDev } = require('./utils');
 
-let mainWindow = null;
+const store = new Store();
 
-/**
- * Electron Main Process File
- */
+let mainWindow = null;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -33,6 +36,11 @@ app.on('ready', () => {
 });
 
 app.on('window-all-closed', () => {
+  // On macOS it is common for applications and their menu bar
+  // to stay active until the user quits explicitly with Cmd + Q.
+  // Exceptions include System Preferences, App Store,
+  // Though there is no way to re-open the main window
+  // through the menu, but you can click on the dock icon.
   if (process.platform !== 'darwin') {
     app.quit();
   }
@@ -41,5 +49,7 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
   if (mainWindow === null) {
     createWindow();
+  } else {
+    mainWindow.show();
   }
 });
