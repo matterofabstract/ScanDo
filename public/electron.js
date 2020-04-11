@@ -1,7 +1,7 @@
 require('./core/');
 
 const path = require('path');
-const { app, BrowserWindow, nativeImage } = require('electron');
+const { app, BrowserWindow } = require('electron');
 
 const { isDev } = require('./utils');
 
@@ -19,16 +19,11 @@ function createWindow() {
     frame: false,
     transparent: true,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
     },
     minWidth: 340,
-    minHeight: 400
+    minHeight: 400,
   });
-
-  // mainWindow.webContents.on('did-finish-load', () => {
-  //   mainWindow.setTitle('nvAux');
-  //   console.log('mainWindow.getTitle() @@@@@@@@@@', mainWindow.getTitle());
-  // });
 }
 
 app.on('ready', () => {
