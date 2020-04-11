@@ -1,5 +1,10 @@
 # Scan Do Scan
 
+[![Dependencies](https://david-dm.org/matterofabstract/ScanDo.svg)](https://github.com/matterofabstract/ScanDo)
+![Github All Releases](https://img.shields.io/github/downloads/matterofabstract/ScanDo/total.svg)
+![Lint](https://github.com/matterofabstract/ScanDo/workflows/Lint/badge.svg)
+![Build/release](https://github.com/matterofabstract/ScanDo/workflows/Build/release/badge.svg)
+
 ScanDo is a QR Code scanner that gets stuff done.
 
 You scan a QR code and depending on it's contents, ScanDo provides you compatible actions.
