@@ -16,22 +16,22 @@
   },
   "dependencies": {
     "chokidar": "^3.3.1",
-    "electron-store": "^5.1.0",
-    "electron-updater": "^4.2.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "electron-store": "^5.1.1",
+    "electron-updater": "^4.2.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-icons": "^3.9.0",
     "react-resizable": "^1.10.1",
-    "react-scripts": "3.3.1"
+    "react-scripts": "3.4.1"
   },
   "devDependencies": {
-    "@rescripts/cli": "^0.0.13",
-    "@rescripts/rescript-env": "^0.0.11",
+    "@rescripts/cli": "^0.0.14",
+    "@rescripts/rescript-env": "^0.0.12",
     "concurrently": "^5.1.0",
-    "electron": "^8.0.0",
-    "electron-builder": "^22.2.0",
-    "electron-devtools-installer": "^2.2.4",
-    "wait-on": "^3.3.0"
+    "electron": "^8.2.1",
+    "electron-builder": "^22.4.1",
+    "electron-devtools-installer": "^3.0.0",
+    "wait-on": "^4.0.2"
   },
   "eslintConfig": {
     "extends": "react-app"
