@@ -1,2 +1,12 @@
 .DS_Store
-node_modules/*
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+.eslintcache
+*_rxdb_internal
+/build
+/node_modules
+/public/build/bundle*
+dist
+npm-debug.log*

@@ -5,9 +5,9 @@
 ![Lint](https://github.com/matterofabstract/ScanDo/workflows/Lint/badge.svg)
 ![Build/release](https://github.com/matterofabstract/ScanDo/workflows/Build/release/badge.svg)
 
-ScanDo is a QR Code scanner that gets stuff done.
+ScanDo is a Computer Vision (CV) scanner that gets stuff done.
 
-You scan a QR code and depending on it's contents, ScanDo provides you compatible actions.
+Scan something like a QR code or web cam feed and ScanDo will provide you with a list of compatible actions, allowing you to build and chain together powerful logistical workflows.
 
 ![Screenshot of ScanDo](https://bpk-disk.s3.us-east-1.amazonaws.com/scando-screenshot.png)
 
@@ -27,13 +27,13 @@ You scan a QR code and depending on it's contents, ScanDo provides you compatibl
 Get a local develop instance running with:
 
 ```sh
-yarn && yarn electron-dev
+npm i && npm run electron-dev
 ```
 
 You can generate a build for macOS, Windows and Linux all in one go with:
 
 ```sh
-yarn electron-pack
+npm run electron-pack
 ```
 
 Don't forget to take a peak at `packages.json` for more commands.
